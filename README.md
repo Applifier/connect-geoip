@@ -16,7 +16,7 @@ Example below returns geoip details (country) for every request.
     ).listen(3000);
 
 
-## Licences
+## Licenses
 GeoIP module used (https://github.com/kuno/GeoIP) is licensed under GNU GPL.
 
 Other:<br />
