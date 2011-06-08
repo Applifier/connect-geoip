@@ -5,15 +5,15 @@ Connect middleware to query client geolocation from geoip data.
 ## Basic example
 Example below returns geoip details (country) for every request.
 
-  var connect = require('connect');
-  var geoipMiddleware = require('geoip-middleware');
+    var connect = require('connect');
+    var geoipMiddleware = require('geoip-middleware');
 
-  connect.createServer(
-    geoipMiddleware.geoipMiddleware(),
-    function(req, res, next) {
-      res.end(JSON.stringify(req.geoip));
-    }
-  ).listen(3000);
+    connect.createServer(
+      geoipMiddleware.geoipMiddleware(),
+      function(req, res, next) {
+        res.end(JSON.stringify(req.geoip));
+      }
+    ).listen(3000);
 
 
 ## Licences
