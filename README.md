@@ -17,7 +17,7 @@ Example below returns geoip details (country) for every request.
 
 
 ## Licenses
-GeoIP module used (https://github.com/kuno/GeoIP) is licensed under GNU GPL.
+GeoIP module used (https://github.com/kuno/GeoIP) is licensed under GNU LGPL.
 
 Other:<br />
 (The MIT License)
