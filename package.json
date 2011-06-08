@@ -8,6 +8,7 @@
   "main": "./index.js",
   "engines": { "node": ">= 0.4.1" },
   "dependencies": {
-            "geoip" : "0.4.0final"
+            "geoip" : "0.4.0final",
+            "connect" : ">= 0.1"
   }
 }
