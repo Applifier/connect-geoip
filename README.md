@@ -22,7 +22,7 @@ GeoIP module used (https://github.com/kuno/GeoIP) is licensed under GNU GPL.
 Other:
 (The MIT License)
 
-Copyright(c) 2011 Applifier Ltd. (Connect - parameter router)<br />
+Copyright(c) 2011 Applifier Ltd.<br />
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
