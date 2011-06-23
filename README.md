@@ -1,5 +1,5 @@
 # connect-geoip
-Connect middleware to query client geolocation from geoip data. At the moment country data is the only data retrieved.
+Connect middleware to query client geolocation from geoip data (at the moment country data is the only data retrieved).
 ## Installation
     $ npm install connect-geoip
 If you have problems with the geoip package, turn to https://github.com/kuno/GeoIP for instructions.
