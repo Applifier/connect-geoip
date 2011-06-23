@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Connect middleware to query client geolocation from geoip data",
   "keywords": ["geoip", "connect"],
-  "repository": "git://github.com/Applifier/geoip-middleware.git",
+  "repository": "git://github.com/Applifier/connect-geoip.git",
   "author": "Jaakko Lukkari <jaakko@applifier.com>",
   "main": "./index.js",
   "engines": { "node": ">= 0.4.1" },
