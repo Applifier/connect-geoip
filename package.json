@@ -1,7 +1,7 @@
 {
-  "name": "geoip-middleware",
+  "name": "connect-geoip",
   "version": "0.0.1",
-  "description": "Connect middleware to query client geolocation from geoip database",
+  "description": "Connect middleware to query client country data from geoip database",
   "keywords": ["geoip", "connect"],
   "repository": "git://github.com/Applifier/geoip-middleware.git",
   "author": "Jaakko Lukkari <jaakko@applifier.com>",
