@@ -1,1 +1,1 @@
-exports = module.exports = require('./lib/geoipmiddleware.js');
+exports = module.exports = require('./lib/connect-geoip.js');
