@@ -2,12 +2,12 @@ var connect = require('connect')
   , assert = require('assert')
   , should = require('should')
   , http = require('http')
-  , geoipMiddleware = require('geoipmiddleware.js');
+  , geoip = require('connect-geoip.js');
 
 module.exports = {
   'test ipv4': function() {
     var app = connect.createServer(
-      geoipMiddleware.geoipMiddleware(),
+      geoip.geoip(),
       function(req, res, next) {
         res.end(JSON.stringify(req.geoip));
       }
@@ -18,9 +18,9 @@ module.exports = {
       { body: '{"country":{"country_code":"US","country_code3":"USA","country_name":"United States","continent_code":"NA"}}' });
 
   },
-  'test ipv4 with local ip': function() {
+  'test ipv4 with an ip that is not in the database': function() {
     var app = connect.createServer(
-      geoipMiddleware.geoipMiddleware(),
+      geoip.geoip(),
       function(req, res, next) {
         res.end(JSON.stringify(req.geoip));
       }
