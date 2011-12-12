@@ -2,7 +2,7 @@ var connect = require('connect')
   , assert = require('assert')
   , should = require('should')
   , http = require('http')
-  , geoip = require('connect-geoip.js');
+  , geoip = require('../lib/connect-geoip');
 
 module.exports = {
   'test ipv4': function() {
@@ -15,7 +15,7 @@ module.exports = {
   
     assert.response(app,
       { url: '/', headers:{'x-forwarded-for' : "8.8.8.8, proxy1, proxy2"}},
-      { body: '{"country":{"country_code":"US","country_code3":"USA","country_name":"United States","continent_code":"NA"}}' });
+      { body: '{"country":{"country_name":"United States","country_code":"US","country_code3":"USA","continent_code":"NA"}}' });
 
   },
   'test ipv4 with an ip that is not in the database': function() {
