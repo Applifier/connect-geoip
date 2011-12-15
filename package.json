@@ -1,6 +1,6 @@
 {
   "name": "connect-geoip",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Connect middleware to query client geolocation from geoip data",
   "keywords": ["geoip", "connect"],
   "repository": "git://github.com/Applifier/connect-geoip.git",
@@ -8,7 +8,7 @@
   "main": "./index.js",
   "engines": { "node": ">= 0.4.1" },
   "dependencies": {
-            "geoip" : "0.4.5",
+            "geoip" : "0.4.4",
             "connect" : "1.8.2"
   }
 }
