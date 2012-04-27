@@ -13,7 +13,7 @@ Example below returns geoip details (country) for every request.
       geoip.geoip(),
       function(req, res, next) {
         res.end(JSON.stringify(req.geoip));
-        // {"country":{"country_code":"US","country_code3":"USA","country_name":"United States","continent_code":"NA"}}
+        // {"country":{"country_code":"FI","country_name":"Finland","continent":"Europe"}}
       }
     ).listen(3000);
 
