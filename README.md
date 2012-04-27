@@ -2,7 +2,6 @@
 Connect middleware to query client geolocation from geoip data (at the moment country data is the only data retrieved).
 ## Installation
     $ npm install connect-geoip
-If you have problems with the geoip package, turn to https://github.com/kuno/GeoIP for instructions.
 ## Basic example
 Example below returns geoip details (country) for every request.
 
@@ -16,9 +15,6 @@ Example below returns geoip details (country) for every request.
         // {"country":{"country_code":"FI","country_name":"Finland","continent":"Europe"}}
       }
     ).listen(3000);
-
-## Defining a specific path to geoip data
-    geoip.geoip({path : "/tmp/GeoIP.dat"});
 
 ## Licenses
 GeoIP module used (https://github.com/kuno/GeoIP) is licensed under GNU LGPL.
