@@ -1,5 +1,5 @@
 postinstall:
-	echo "Updating geoip data"; \
+	@echo "Updating geoip data"; \
 	cd node_modules/geoip-lite/data; \
 	curl -O "http://koti.kapsi.fi/garo/GeoIPCountryCSV.zip"; \
 	unzip -u GeoIPCountryCSV.zip; \
