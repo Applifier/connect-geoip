@@ -7,7 +7,6 @@
   "author": "Jaakko Lukkari <jaakko@applifier.com>",
   "main": "./index.js",
   "engines": { "node": ">= 0.4.1" },
-  "scripts": {"postinstall": "make postinstall"},
   "dependencies": {
             "geoip-lite" : "1.0.8",
             "connect" : "1.8.2"
