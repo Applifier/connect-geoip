@@ -1,7 +1,7 @@
 update-data:
 	@echo "Updating geoip data"; \
 	cd node_modules/geoip-lite/data; \
-	curl -O "http://geolite.maxmind.com/download/geoip/database/GeoIPCountryCSV.zip"; \
+	curl -O "http://cdn.applifier.com/pub/geoip/GeoIPCountryCSV.zip"; \
 	unzip -u GeoIPCountryCSV.zip; \
 	rm GeoIPCountryCSV.zip; \
 	rm geoip-country.dat || echo "This is not a problem"; \
