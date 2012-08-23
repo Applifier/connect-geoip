@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/Applifier/connect-geoip.png)](http://travis-ci.org/Applifier/connect-geoip)
 # connect-geoip
 Connect middleware to query client geolocation from geoip data (at the moment country data is the only data retrieved).
 ## Installation
