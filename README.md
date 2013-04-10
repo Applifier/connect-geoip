@@ -13,7 +13,7 @@ connect.createServer(
   geoip.geoip(),
   function(req, res, next) {
     res.end(JSON.stringify(req.geoip));
-    // {"country":{"country_code":"FI","country_name":"Finland","continent":"Europe"}}
+    // {"city":"Helsinki","region":"13","ll":[60.1756,24.9342],"country":{"country_code":"FI","country_name":"Finland","continent":"Europe"}}
   }
 ).listen(3000);
 ```
