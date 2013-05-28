@@ -5,7 +5,7 @@ update-data:
 	unzip -u GeoIPCountryCSV.zip; \
 	rm GeoIPCountryCSV.zip; \
 	rm geoip-country.dat || echo "This is not a problem"; \
-	n use 0.6.17 ../lib/country-converter.js ./GeoIPCountryWhois.csv geoip-country.dat; \
+	n use 0.8.18 ../lib/country-converter.js ./GeoIPCountryWhois.csv geoip-country.dat; \
 	rm GeoIPCountryWhois.csv
 
 
