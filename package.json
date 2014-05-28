@@ -1,15 +1,23 @@
 {
   "name": "connect-geoip",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Connect middleware to query client geolocation from geoip data",
-  "keywords": ["geoip", "connect"],
+  "keywords": [
+    "geoip",
+    "connect"
+  ],
   "repository": "git://github.com/Applifier/connect-geoip.git",
   "author": "Jaakko Lukkari <jaakko@applifier.com>",
   "main": "./index.js",
-  "engines": { "node": ">= 0.4.1" },
-  "dependencies": {
-            "geoip-lite" : "1.0.8",
-	    "connect" : "2.6.1"
+  "engines": {
+    "node": ">= 0.4.1"
   },
-  "devDependencies": {"expresso" : "0.9.2"}
+  "dependencies": {
+    "geoip-lite": "1.0.8",
+    "connect": "2.17.3"
+  },
+  "devDependencies": {
+    "expresso": "0.9.2",
+    "should": "~3.3.2"
+  }
 }
