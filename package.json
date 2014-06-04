@@ -12,6 +12,11 @@
   "engines": {
     "node": ">= 0.4.1"
   },
+  "scripts": {
+    "test": "make test",
+    "updatedb": "make update-data",
+    "postinstall": "npm run-script updatedb"
+  },
   "dependencies": {
     "geoip-lite": "1.0.8",
     "connect": "2.17.3"
