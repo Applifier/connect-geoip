@@ -1,23 +1,44 @@
 # connect-geoip
-Connect middleware to query client geolocation from geoip data (at the moment country data is the only data retrieved).
+Connect middleware to query client geolocation from geoip data.
 ## Installation
     $ npm install connect-geoip
 ## Basic example
 Example below returns geoip details (country) for every request.
 
-    var connect = require('connect');
-    var geoip = require('connect-geoip');
+```javascript
+var connect = require('connect');
+var geoip = require('connect-geoip');
 
-    connect.createServer(
-      geoip.geoip(),
-      function(req, res, next) {
-        res.end(JSON.stringify(req.geoip));
-        // {"country":{"country_code":"FI","country_name":"Finland","continent":"Europe"}}
-      }
-    ).listen(3000);
+connect.createServer(
+  geoip.geoip(),
+  function(req, res, next) {
+    res.end(JSON.stringify(req.geoip));
+    // {"city":"Helsinki","region":"13","ll":[60.1756,24.9342],"country":{"country_code":"FI","country_name":"Finland","continent":"Europe"}}
+  }
+).listen(3000);
+```
+
+## Example response
+```javascript
+{
+  city: "Englewood",
+  region: "CO",
+  ll: [
+    39.6237,
+    -104.8738
+  ],
+  country: {
+    country_code: "US",
+    country_name: "United States",
+    continent: "North America"
+  }
+}
+```
 
 ## Licenses
-GeoIP module used (https://github.com/kuno/GeoIP) is licensed under GNU LGPL.
+GeoIP module used (https://github.com/bluesmoon/node-geoip) is licensed under the Apache License.
+Details of this license and the MaxMind GeoIP data license can be found here:
+https://github.com/bluesmoon/node-geoip/blob/master/LICENSE
 
 Other:<br />
 (The MIT License)

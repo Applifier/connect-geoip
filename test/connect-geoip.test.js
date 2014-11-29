@@ -11,7 +11,7 @@ module.exports = {
     var req = {connection: {remoteAddress: "213.243.175.65"}, headers:{}};
 
     middleware(req, null, function () {
-      assert.equal(JSON.stringify(req.geoip), JSON.stringify({"country":{"country_code":"FI","country_name":"Finland","continent":"Europe"}}));
+      assert.equal(JSON.stringify(req.geoip), JSON.stringify({"city":"Helsinki","region":"13","ll":[60.1756,24.9342],"country":{"country_code":"FI","country_name":"Finland","continent":"Europe"}}));
     });
   }
 };
